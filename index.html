@@ -167,12 +167,9 @@ public static int columnSize = 20 - 2; //2 get added
     //sourceCharges.get(0).setPosition(width/2 + width/4 * cos(t), height/2 + height/4 * sin(t)); 
     
     //Iterator<TestCharge> iterator = electrons.iterator();
-    console.log(1);
     List<TestCharge> newElectronList = new ArrayList<TestCharge>();
     for(TestCharge electron : electrons) {
-      console.log("hi");
       //TestCharge electron = iterator.next();
-      console.log(2);
       electron.display();
       electron.updatePosition(sourceCharges);  
       electron.checkSucked(sourceCharges);
@@ -451,7 +448,6 @@ public class TestCharge {
 
   //creates a float of the angle of the distance vector and the x-axis
   private float angle(SourceCharge other) {
-    console.log("angy");
     return PVector.angleBetween(distance(other), X_HAT);
   }
 
